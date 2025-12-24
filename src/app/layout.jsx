@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar/>
         </header>
-        <main className=" min-h-[calc(100vh-300px)] pt-28">
+        <main className=" min-h-[calc(100vh-300px)] bg-base-200 pt-28">
                   {children}
 
 
