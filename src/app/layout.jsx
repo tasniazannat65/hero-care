@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar/>
         </header>
-        <main className="w-11/12 mx-auto min-h-[calc(100vh-300px)]">
+        <main className=" min-h-[calc(100vh-300px)] pt-28">
                   {children}
 
 
