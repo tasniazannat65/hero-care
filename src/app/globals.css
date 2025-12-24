@@ -1,26 +1,34 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: light --default;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  /* Brand */
+  --color-primary: oklch(62% 0.13 190);
+  --color-primary-content: oklch(98% 0 0);
+  --color-secondary: oklch(68% 0.12 155);
+  --color-secondary-content: oklch(20% 0.02 160);
+  --color-accent: oklch(78% 0.10 165);
+  --color-accent-content: oklch(25% 0.03 170);
+
+  /* Base */
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(97% 0.01 180);
+  --color-base-300: oklch(92% 0.02 180);
+
+  /* Neutral */
+  --color-neutral: oklch(32% 0.02 200);
+  --color-neutral-content: oklch(96% 0 0);
+
+  /* Feedback */
+  --color-success: oklch(70% 0.14 150);
+  --color-success-content: oklch(20% 0.03 150);
+  /* Error / Cancel */
+  --color-error: oklch(60% 0.22 25);
+  --color-error-content: oklch(98% 0 0);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
