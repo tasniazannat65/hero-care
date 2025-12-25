@@ -32,3 +32,21 @@
 }
 
 @custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
+
+
+
+
+
+.testimonial-swiper .swiper-pagination-bullet {
+  background-color: #cbd5e1;
+  opacity: 1;
+}
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: #5aa0d1;
+}
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-prev {
+  color : #5aa0d1;
+}
+
+

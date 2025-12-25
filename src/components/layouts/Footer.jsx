@@ -6,7 +6,7 @@ import {FaLinkedinIn, FaXTwitter} from "react-icons/fa6"
 import Link from 'next/link';
 const Footer = () => {
     return (
-        <div className='relative mt-20 overflow-hidden text-neutral'>
+        <div className='relative  overflow-hidden text-neutral'>
    <div className='absolute inset-0 bg-cover bg-center' 
    style={{backgroundImage: "url('/assets/bg.jpg')"}}
    >
